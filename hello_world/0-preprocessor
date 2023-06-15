@@ -1,0 +1,4 @@
+#!/bin/bash
+input_file="input.c"
+output_file="output.c"
+gcc -E $input_file -o $output_file
