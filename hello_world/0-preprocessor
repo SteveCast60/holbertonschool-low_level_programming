@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $input_file -o $output_file
+gcc -E input.c -o output.c
