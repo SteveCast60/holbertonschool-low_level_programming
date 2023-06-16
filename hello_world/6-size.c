@@ -1,6 +1,11 @@
+/*
+*File: 6-size.c
+*Auth: Brennan D Baraba
+*/
 #include <stdio.h>
 /**
- *main - Entry point
+ *main - Prints the size of various types based on
+ *       the computer it is compiled and run on..
  *Return: always 0 (success)
  */
 int main(void)
