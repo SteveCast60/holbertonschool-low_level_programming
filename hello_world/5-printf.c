@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point 
- *
- * Return Always 0.
+ * print "output message"
+ * Return Always 0. (success)
  */
 int main(void)
 {
