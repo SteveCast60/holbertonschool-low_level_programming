@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main - Entry point */
-/* This function is the entry point of the program. */
-/* It prints whether a given number is positive or negative. */
-/* Return: Always 0 (Success) */
-
+/** main - Entry point
+This function is the entry point of the program.
+It prints whether a given number is positive or negative.
+Return: Always 0 (Success) */
 int main(void) /* Prints positive or negative */
 {
 	int n;
