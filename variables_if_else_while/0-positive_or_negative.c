@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/* Prints positive or negative */
 
-/* betty style doc for function main goes there */
+/* Prints positive, negative or zero */
 int main(void)
 {
 	int n;
