@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* Last digit, greater or less */
 
-/* The funtion main is a program to calculate the last digit and see if is greater or less */
+/* The funtion main is a program to calculate the last digit greater or less */
 int main(void) /* main - Entry point of the program */
 {
 	int n, lastd;
