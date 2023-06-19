@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/* Last digit, greater or less */
 
-/* betty style doc for function main goes there */
+/* main program to calculate the last digit and see if is greater or less */
 int main(void)
 {
 	int n, lastd;
