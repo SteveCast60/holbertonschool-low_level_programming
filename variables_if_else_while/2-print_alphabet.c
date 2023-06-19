@@ -1,8 +1,7 @@
 #include <stdio.h>
-/** main - input program
- *
- *
- * Description: alphabet in lowercase */
+/*main - input program*/
+
+/*Description: alphabet in lowercase*/
 
 int main(void)
 {
