@@ -5,8 +5,8 @@
 /* This function is the entry point of the program. */
 /* It prints whether a given number is positive or negative. */
 /* Return: Always 0 (Success) */
-/* Prints positive or negative */
-int main(void)
+
+int main(void) /* Prints positive or negative */
 {
 	int n;
 
