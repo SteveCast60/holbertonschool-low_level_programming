@@ -12,11 +12,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	printf("Last digit of %i", n);
 	printf("is");
-	if else (n > 5 )
+	if (n > 5 )
 	{
 		printf("and is greater than 5");
 	
-		if else (n == 0) 
+		if (n == 0) 
 		{
 			printf("and is 0");
 			
