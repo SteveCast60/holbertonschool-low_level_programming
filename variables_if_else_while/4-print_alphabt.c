@@ -1,4 +1,8 @@
 #include <stdio.h>
+/* main - Entry point of program */
+
+/* Description: Program that prints the alphabet less the letters q and e */
+
 
 int main(void)
 {
