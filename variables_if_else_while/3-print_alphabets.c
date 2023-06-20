@@ -4,13 +4,11 @@ int main()
 {
     for(int x = 'A'; x <= 'Z'; x++)
     {
-        x = tolower(x);
-        putchar(x);
+        char small = tolower(x);
+        putchar(small);
     }
     for(int x = 'a'; x <= 'z'; x++)
-    {
-	    x =toUpper(x);
-	    putchar(x);
-    }
+	    char upper = toupper(x);
+    putchar(small);
     return 0;
 }
