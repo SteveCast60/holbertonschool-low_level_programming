@@ -1,7 +1,9 @@
 #include <stdio.h>
-/*main - input program*/
+/*main - Entry point of the program*/
 
-/*Description: alphabet in lowercase*/
+/*Description: This program prints the alphabet in lowercase.*/
+
+/*Return: Always 0 (Success)*/
 
 int main(void)
 {
