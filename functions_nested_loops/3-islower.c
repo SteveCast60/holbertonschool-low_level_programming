@@ -2,7 +2,7 @@
 
 /**
  * _islower - entry point of program
- * c - vairable letter
+ * @c: vairable letter
  *Return: 0
  */
 int _islower(int c)
