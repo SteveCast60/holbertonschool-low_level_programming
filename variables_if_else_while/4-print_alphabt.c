@@ -1,7 +1,9 @@
 #include <stdio.h>
-/* main - Entry point of program */
 
-/* Description: Program that prints the alphabet less the letters q and e */
+/**
+ * main - entry point of program
+ * Return: 0
+ */
 
 
 int main(void)
