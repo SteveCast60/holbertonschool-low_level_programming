@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/* main - entry point of program */
-
-/* description: program that prints all numbers of base 16 */
+/**
+ * main - entry point of program
+ * Return: 0
+ */
 
 int main(void)
 {
