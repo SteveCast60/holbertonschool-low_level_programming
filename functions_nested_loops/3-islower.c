@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * _islower(int c) - entry point of program
- *
+ * _islower - entry point of program
+ * c - vairable letter
  *Return: 0
  */
 int _islower(int c)
