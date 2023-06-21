@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * main -entry point of program
+ * main - entry point of program
  * Return: 0
  */
 
@@ -18,4 +18,3 @@ void print_alphabet(void)
 
 	putchar('\n');
 }
-	
