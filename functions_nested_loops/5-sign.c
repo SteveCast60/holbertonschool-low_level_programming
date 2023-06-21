@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * print_sign - entry point of program
  *
@@ -25,8 +26,8 @@ int print_sign(int n)
 	else
 	{
 		test = -1;
-		putchar('-', test);
-		putchar(test)
+		putchar('-');
+		putchar(test);
 	}
 	return (0);
 }
