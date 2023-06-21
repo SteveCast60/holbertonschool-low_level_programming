@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * main - entry point of program
+ * print_alphabet_x10 - entry point of program
  * Return: 0
  */
 
