@@ -2,19 +2,18 @@
 
 /**
  * main - entry point of progrram
- *
+ *@n: variable function
  * Return: 0
  */
 
-int _abs(int n)
+int print_last_digit(int a)
 {
-	if (n > 0)
-		return (n);
-	
+	if (a >= 0 && a <= 9)
+		return (a);
 	else
 	{
-		n *= -1;
-		return (n);
+		a = _abs(a % 10);
+		
+		return (a);;
 	}
 }
-
