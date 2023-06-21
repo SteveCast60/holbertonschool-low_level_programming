@@ -1,10 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* Last digit, greater or less */
 
-/* The funtion main is a program to calculate the last digit greater or less */
-int main(void) /* main - Entry point of the program */
+/**
+ * main - entry point of program
+ * Return: 0
+ */
+
+
+int main(void)
 {
 	int n, lastd;
 
