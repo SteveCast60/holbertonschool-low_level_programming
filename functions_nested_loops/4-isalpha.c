@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *  _isalpha - entry point of program
+ *_isalpha - entry point of program
  *
- *  return: 0
+ *Return: 0
  */
 
 int _isalpha(int c)
