@@ -2,7 +2,7 @@
 
 /**
  * print_sign - entry point of program
- *
+ * @n: variable function
  * Return: 1 for positive num, -1 for negative num or zero for anything else
  */
 
