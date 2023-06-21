@@ -1,33 +1,27 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * print_sign - entry point of program
  *
- * Return: 0
+ * Return: 1 for positive num, -1 for negative num or zero for anything else
  */
-
 
 int print_sign(int n)
 {
-	int test;
-	
 	if (n > 0)
 	{
-		test = 1;
-		putchar('+');
-		putchar(test);
+		_putchar(43)
+		return (1);
 	}
-	else if (n == 0)
+	else if (n < 0)
 	{
-		test = 0;
-		putchar('0');
-		putchar(test);
+		_putchar(45);
+		return (-1);
 	}
 	else
 	{
-		test = -1;
-		putchar('-');
-		putchar(test);
+		_putchar(48);
+		return (0)
 	}
-	return (0);
 }
+
