@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/* main - entry point of program*/
-
-/* Description: program that print the alphabet in lowercase and uppercase */
+/**
+ * main - entry point of program
+ * Return: 0
+ */
 
 int main(void)
 {
