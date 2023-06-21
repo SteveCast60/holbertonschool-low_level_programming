@@ -1,20 +1,21 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main -entry point of program
  * Return: 0
  */
 
-
-int main(void)
+void print_alphabet(void)
 {
-	char alphabet = 'a';
+	char letter = 'a';
 
-	while (alphabet <= 'z')
+	while (letter <= 'z')
 	{
-	putchar(alphabet);
-	alphabet++;
+		_putchar(letter);
+		letter++;
 	}
-	putchar('\n');
-	return (0);
+
+	_putchar('\n');
 }
+	
