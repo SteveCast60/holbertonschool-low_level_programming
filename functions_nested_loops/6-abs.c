@@ -2,7 +2,7 @@
 
 /**
  * _abs - entry point of program
- *
+ *@n: variable function
  * Return: 0
  */
 
