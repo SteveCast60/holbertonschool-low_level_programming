@@ -2,7 +2,7 @@
 
 /**
  *_isalpha - entry point of program
- *
+ *@c: variable function
  *Return: 0
  */
 
