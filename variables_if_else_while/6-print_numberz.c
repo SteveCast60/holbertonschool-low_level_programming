@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* main - Entry point of program */
-
-/* Description: program that prints all single digit numbers base 10. */
+/**
+ * main -entry point of program
+ * Return: 0
+ */
 
 int main(void)
 {
