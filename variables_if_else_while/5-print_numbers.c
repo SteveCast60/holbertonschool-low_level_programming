@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/* main - entry point of program*/
-
-/* Description: program that prints the numbers base 10 */
+/**
+ * main -entry point of program
+ * Return: 0
+ */
 
 int main(void)
 {
