@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _islower - entry point of program
+ * _islower(int c) - entry point of program
  *
  *Return: 0
  */
@@ -12,4 +12,3 @@ int _islower(int c)
 	else
 		return (0);
 }
-
