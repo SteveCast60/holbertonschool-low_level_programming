@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - entry point of progrram
+ * print_last_digit - entry point of progrram
  *@n: variable function
  * Return: 0
  */
