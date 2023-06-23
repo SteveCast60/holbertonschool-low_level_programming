@@ -1,13 +1,2 @@
-school: main.c helper.c
-		gcc -o school main.c helper.c
-
-
-	gcc -o school main.c helper
-
-	gcc -o school main
-all: school
-
-clean:
-		rm -f school
-
-	rm
+all: main.c school.c
+	gcc main.c school.c o- school
