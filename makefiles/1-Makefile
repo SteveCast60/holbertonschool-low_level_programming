@@ -1,3 +1,4 @@
+all: school.c
+	gcc school.c -o school
 CC = gcc
-all: main.c school.c
-	        gcc main.c school.c -o school
+SRC = school.c
