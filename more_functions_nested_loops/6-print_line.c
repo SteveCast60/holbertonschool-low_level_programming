@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_line -Entry point of program
- *
+ *@n: parameter of function
  * Return: 0
  */
 
