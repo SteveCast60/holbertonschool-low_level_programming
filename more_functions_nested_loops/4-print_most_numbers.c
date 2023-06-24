@@ -9,6 +9,6 @@
 void print_most_numbers(void)
 {
 	char numbers[] = "01356789\n";
-	
+
 	printf("%s", numbers);
 }
