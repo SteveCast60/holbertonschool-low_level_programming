@@ -10,7 +10,7 @@
 
 void _putchar(char c)
 {
-	num(c);
+
 }
 
 void print_most_numbers()
