@@ -5,7 +5,7 @@
  * print_triangle - entry point of program
  *@size: parameter of function
  * Return: 0
- */ 
+ */
 
 void print_triangle(int size)
 {
