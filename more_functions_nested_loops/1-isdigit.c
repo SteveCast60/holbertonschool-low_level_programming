@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * _isdigit - entry point of program
+ * _isdigit: Entry point of program
  *@c: parameter of function
  * Return: 0
  */
@@ -10,7 +10,7 @@ int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
-		return 1;
+		return (1);
 	}
-	return 0;
+	return (0);
 }
