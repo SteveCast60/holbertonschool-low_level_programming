@@ -7,13 +7,20 @@
  * Return: 0
  */
 
-void more_numbers()
+void more_numbers(void)
 {
-	char numbers[] = "01234567891011121314\n";
-	int j;
+	int x, y;
 
-	for (j = 0; j < 10; j++)
+	for (x = 0; x < 10; x++)
 	{
-		printf("%c", numbers[j]);
+		for (y = 0; y <=14; y++)
+		{
+			if (y > 9)
+			{
+				_putchar((y / 10) + '0');
+			}
+			_putchar((y % 10) + '0');
+		}
+		_putchar('\n');
 	}
 }
