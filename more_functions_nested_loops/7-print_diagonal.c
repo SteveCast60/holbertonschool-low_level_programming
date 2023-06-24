@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagonal - Entry point of program
@@ -12,7 +13,7 @@ void print_diagonal(int n)
 
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
 	{
@@ -20,7 +21,7 @@ void print_diagonal(int n)
 		{
 			for (y = 0; y < x; y++)
 			{
-				putchar(32);
+				_putchar(32);
 			}
 		putchar(92);
 		_putchar('\n');
