@@ -9,14 +9,11 @@
 
 void more_numbers()
 {
-	char numbers[] = "01234567890123456789\n";
+	char numbers[] = "01234567891011121314\n";
 	int i, j;
-	
+
 	for (j = 0; j < 10; j++)
 	{
-		for (i = 0; i < 20; i++)
-		{
-			printf("%c", numbers[i]);
-		}
+		printf("%c", char[j]);
 	}
 }
