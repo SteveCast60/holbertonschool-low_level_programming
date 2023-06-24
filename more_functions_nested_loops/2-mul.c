@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * multiply - Entry point of program
- *
+ * mul - Entry point of program
+ *@a: parameter of function
+ *@b: parameter of function
  * Return: 0
  */
 
-int multiply(int a, int b)
+int mul(int a, int b)
 {
 	return a * b;
 }
