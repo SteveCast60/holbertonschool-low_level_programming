@@ -9,15 +9,15 @@
 
 void puts2(char *str)
 {
-	int i;
-	i = 0;
-	char s[32] = "";
+	if (str == NULL)
+	return;
 	
-	for(i < strlen(str); i+=2)
+	int i = 0;
+	
+	while (str[i] != '\0')
 	{
-		putchar(str[i]);
-		s[i/2]=str[i];
+		printf("%c", str[i]);
+		i += 2;
 	}
-	printf("\n\n2nd option\n%s", s);
-	return 0;
+	printf("\n");
 }
