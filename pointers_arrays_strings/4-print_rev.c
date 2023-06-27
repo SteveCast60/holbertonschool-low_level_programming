@@ -8,13 +8,13 @@
  * Return: 0
  */
 
-void print_rev(char *s) {
+void print_rev(char *s)
+{
+	int len = strlen(s);
 
-	int length = strlen(s);
-	
-	for (int i = length - 1; i >= 0; i--)
+	for (int i = len - 1; i >= 0; i--)
 	{
-		putchar(s[i]);
+		printf("%c", s[i]);
 	}
-	putchar('\n');
+	printf("\n");
 }
