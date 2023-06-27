@@ -9,16 +9,14 @@
 
 void puts2(char *str)
 {
-	int i;
-	i = 0;
-	
 	if (str == NULL)
-	return;
-
+		return;
+	
+	int i = 0;
 	while (str[i] != '\0')
 	{
 		printf("%c", str[i]);
-		i + 2;
+		i += 2;
 	}
 	printf("\n");
 }
