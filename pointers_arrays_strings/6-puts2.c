@@ -7,15 +7,16 @@
  * Return: 0
  */
 
-int main(void)
+void puts2(char *str)
 {
-	char* p = "hello world";
+	int i;
+	i = 0;
 	char s[32] = "";
 	
-	for(int i = 0; i < strlen(p); i+=2)
+	for(i < strlen(str); i+=2)
 	{
-		putchar(p[i]);
-		s[i/2]=p[i];
+		putchar(str[i]);
+		s[i/2]=str[i];
 	}
 	printf("\n\n2nd option\n%s", s);
 	return 0;
