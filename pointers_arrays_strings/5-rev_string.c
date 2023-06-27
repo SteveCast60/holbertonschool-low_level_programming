@@ -13,7 +13,8 @@ void rev_string(char *s)
 	if (s == NULL)
 		return;
 	
-	int length = strlen(s);
+	int length;
+	       length = strlen(s);
 	int start = 0;
 	int end = length - 1;
 	
