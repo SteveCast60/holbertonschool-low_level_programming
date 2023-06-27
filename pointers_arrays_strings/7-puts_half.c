@@ -9,17 +9,26 @@
 
 void puts_half(char *str)
 {
-	int start_index;
-	int length;
-	length = strlen(str);
+	int j = 0;
+	int k;
 
-	if (length % 2 == 0)
+	while (str[j] != '\0')
 	{
-		start_index = length / 2;
+		j++;
+	}
+	if (j % 2 == 1)
+	{
+		k= (j - 1) / 2;
+		k += 1;
 	}
 	else
 	{
-		start_index = (length - 1) / 2;
+		k = j / 2;
 	}
-	printf("%s", &str[start_index]);
-}
+	
+	for (; k < j; k++)
+	{
+	_putchar(str[k]);
+	}
+	_putchar('\n');
+}	
