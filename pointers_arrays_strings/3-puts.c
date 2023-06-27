@@ -10,12 +10,6 @@ void _puts(char *str)
 {
 	printf("%s\n", str);
 
+	return (0);
 }
 
-int main()
-{
-	char *message = "Hello, world!";
-	_puts(message);
-	
-	return 0;
-}
