@@ -9,11 +9,11 @@
 
 void puts2(char *str)
 {
-	if (str == NULL)
-	return;
-	
 	int i;
 	i = 0;
+	
+	if (str == NULL)
+	return;
 
 	while (str[i] != '\0')
 	{
