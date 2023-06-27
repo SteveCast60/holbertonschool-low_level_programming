@@ -8,26 +8,15 @@
  *Return: 0
  */
 
-void rev_string(char *s)
+void rev_string(char *s)  
 {
-	int length;
-	length = strlen(s);
+	int i, len, temp;
+	len = strlen(str1);
 	
-	int start; 
-	start = 0;
-	
-	int end; 
-	end = length - 1;
-
-	if (s == NULL)
-		return;
-
-	while (start < end) 
+	for (i = 0; i < len/2; i++)
 	{
-		char temp = s[start];s
-		[start] = s[end];
-		s[end] = temp;
-		start++;
-		end--;
+		temp = str1[i];
+		str1[i] = str1[len - i - 1];
+		str1[len - i - 1] = temp;
 	}
-}
+}  
