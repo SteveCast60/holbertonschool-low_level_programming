@@ -3,8 +3,8 @@
 
 /**
  * Author: SteveCast
- * Description: Concatenates two strings
- * _strncat function concatenates two strings
+ * Description - Program that Concatenates two strings
+ * _strncat - function concatenates two strings
  * @dest: parameter of function
  * @src: argm function
  * @n: argm function
