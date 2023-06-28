@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- * File: 1-strncat.c
  * Author: SteveCast
  * Description: Concatenates two strings
  * _strncat function concatenates two strings
