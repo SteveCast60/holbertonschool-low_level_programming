@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strcat - function that concatenates two strings
- * @dest: argm function string 1
- * @src: argm function string 2
- * Return: 0
+ *_strcat - function that concatenates two strings
+ *@dest: argm function string 1
+ *@src: argm function string 2
+ *Return: 0
  */
 
 char *_strcat(char *dest, char *src);
