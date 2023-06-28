@@ -8,7 +8,7 @@
  * @dest: parameter of function
  * @src: argm function
  * @n: argm function
- * Return: 0
+ * Return: Pointer *dest
  */
 
 char *_strncat(char *dest, char *src, int n)
