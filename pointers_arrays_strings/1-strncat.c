@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 /**
- * Concatenates two strings
- * *_strncat function concatenates two strings
+ * File: 1-strncat.c
+ * Author: SteveCast
+ * Description: Concatenates two strings
+ * _strncat function concatenates two strings
  * @dest: parameter of function
  * @src: argm function
  * @n: argm function
