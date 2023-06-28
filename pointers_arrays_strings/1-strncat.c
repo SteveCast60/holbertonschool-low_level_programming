@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * _strncat function concatenates two strings
+ * Concatenates two strings
+ * *_strncat function concatenates two strings
  * @dest: parameter of function
  * @src: argm function
  * @n: argm function
