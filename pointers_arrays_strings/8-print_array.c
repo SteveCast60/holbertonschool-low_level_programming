@@ -8,20 +8,20 @@
  * Return: 0
  */
 
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
-	int j = 0;
 
-	while (n[j] != 0)
+	if (n <= 0)
 	{
-		j++;
+		printf("\n");
+		return;
 	}
+	printf("%d", a[0]);
 	
-	for (i = 0; i < j; i++)
+	for (i = 1; i < n; i++)
 	{
-	putchar (n[i]);
-	printf (", ");
+		printf(", %d", a[i]);
 	}
-putchar('\n');
+	printf("\n");
 }
