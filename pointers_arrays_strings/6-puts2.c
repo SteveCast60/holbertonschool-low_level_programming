@@ -10,16 +10,16 @@
 void puts2(char *str)
 {
 	int i;
+	int j = 0;
 	
-	i = 0;
-
-	if (str == NULL)
-	return;
-
-	while (str[i] != '\0')
+	while (str[j] != '\0')
 	{
-		printf("%c", str[i]);
-		i += 2;
+		j++;
 	}
-	printf("\n");
+
+	for (i = 0; i < j; i += 2)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
 }
