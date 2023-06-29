@@ -10,25 +10,30 @@
 
 char *cap_string(char *str)
 {
-	int i = 0;
-	int capitalizar = 1;
+	int index = 0;
 
-	while (str[i] != '\0')
+	while (str[index])
 	{
-		if (isspace(str[i]) || ispunct(str[i]))
-		{
-			capitalizar = 1;
-		}
-		else if (capitalizar)
-		{
-			str[i] = toupper(str[i]);
-			capitalizar = 0;
-		}
-		else if (str[i] == '-' && !isspace(str[i + 1]) && !ispunct(str[i + 1]))
-		{
-			capitalizar = 1;
-		}
-		i++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			
+			index++;
+			
+				if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '=' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}' ||
+				index == 0)
+			str[index] -= 32;
+			index++;
 	}
 	return (str);
 }
