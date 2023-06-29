@@ -1,59 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+#include "main.h"
 
-char *leet(char *str) {
-    char *encoded = malloc(strlen(str) + 1);
-    int i, j;
-    char *letters = "AEOTL";
-    char *replacements = "43071";
-    
-    if (encoded == NULL) {
-        printf("Memory allocation failed.\n");
-        return NULL;
-    }
-    
-    for (i = 0; str[i] != '\0'; i++) {
-        encoded[i] = str[i];
-        for (j = 0; j < strlen(letters); j++) {
-            if (tolower(str[i]) == letters[j]) {
-                encoded[i] = replacements[j];
-                break;
-            }
-        }
-    }
-    
-    encoded[i] = '\0';
-    
-    return encoded;
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+/**
+ * leet - encode into 1337 speak
+ * @n: input value
+ * Return: n value
+ */
 
-char *leet(char *str) {
-    char *encoded = malloc(strlen(str) + 1);
-    int i, j;
-    char *letters = "AEOTL";
-    char *replacements = "43071";
-    
-    if (encoded == NULL) {
-            printf("Memory allocation failed.\n");
-            return NULL;
-        }
-    
-    for (i = 0; str[i] != '\0'; i++) {
-            encoded[i] = str[i];
-            for (j = 0; j < strlen(letters); j++) {
-	                if (tolower(str[i]) == letters[j]) {
-			                encoded[i] = replacements[j];
-			                break;
-			            }
-	            }
-        }
-    
-    encoded[i] = '\0';
-    
-    return encoded;
+char *leet(char *n)
+{
+	int i, j;
+	char s1[] = "aAeEoOtTlL";
+	char s2[] = "4433007711";
+
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == s1[j])
+			{
+				n[i] = s2[j];
+			}
+		}
+	}
+	return (n);
 }
