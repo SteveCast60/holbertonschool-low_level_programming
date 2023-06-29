@@ -12,6 +12,7 @@ char *cap_string(char *str)
 {
 	int i = 0;
 	int capitalizar = 1;
+
 	while (str[i] != '\0')
 	{
 		if (isspace(str[i]) || ispunct(str[i]))
@@ -25,9 +26,9 @@ char *cap_string(char *str)
 		}
 		else if (str[i] == '-' && !isspace(str[i + 1]) && !ispunct(str[i + 1]))
 		{
-			capitalizar = 0;
+			capitalizar = 1;
 		}
 		i++;
 	}
-	return str;
+	return (str);
 }
