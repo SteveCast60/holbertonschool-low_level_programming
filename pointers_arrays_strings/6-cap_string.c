@@ -11,20 +11,23 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-	int capitalize = 1;
-
+	int capitalizar = 1;
 	while (str[i] != '\0')
 	{
 		if (isspace(str[i]) || ispunct(str[i]))
 		{
-			capitalize = 1;
+			capitalizar = 1;
 		}
-		else if (capitalize)
+		else if (capitalizar)
 		{
 			str[i] = toupper(str[i]);
-			capitalize = 0;
+			capitalizar = 0;
+		}
+		else if (str[i] == '-' && !isspace(str[i + 1]) && !ispunct(str[i + 1]))
+		{
+			capitalizar = 0;
 		}
 		i++;
 	}
-	return (str);
+	return str;
 }
