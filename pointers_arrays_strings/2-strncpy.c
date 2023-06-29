@@ -6,7 +6,7 @@
  *@dest: destiny of copy
  *@src: enter point of program
  *@n: iterancy number
- *return: result
+ *Return: variable result char type
  */
 
 char *_strncpy(char *dest, char *src, int n)
