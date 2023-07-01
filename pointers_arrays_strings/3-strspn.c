@@ -9,15 +9,17 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	char **i = *accept
+	char
+	int i;
 	int cont;
 	int result;
 
-	while (**i != '\0')
+	for (i = 0; i < accept && accept != '\0'; i++)
 	{
-		cont++;
-		result = cont;
+		while (*s == *accept[i])
+		{
+			result = (cont + 1);
+		}
 	}
 	return (result);
 }
-
