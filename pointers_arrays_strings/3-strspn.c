@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <bits/stdc++.h>
 
 /**
  * _strspn - Entry point
@@ -11,11 +10,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i;
-    int count = 0;
+	int count = 0;
 
-    for (i = 0; i < strlen(accept); i++)
+    for (i = 0; i < accept; i++)
     {
-        if (count == strlen(s))
+        if (count == s)
             break;
 
         if (accept[i] == s[count])
