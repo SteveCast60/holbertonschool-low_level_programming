@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *_strchr - function that locates a character in a string.
+ *_strchr - function that locates a character in a string, return NULL value.
  *@s: input value.
  *@c: input value.
- *return: NULL value
+ *return NULL value
  */
 
 char *_strchr(char *s, char c)
