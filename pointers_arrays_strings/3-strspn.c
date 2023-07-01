@@ -1,28 +1,28 @@
 #include <stdio.h>
 
-unsigned int _strspn(char* s, char* accept) {
-    unsigned int length = 0;
-    int found = 0;
-    char *acceptPtr;
+/**
+ * _strspn - Entry point
+ * @s: input
+ * @accept: input
+ * Return: always 0 (success)
+ */
 
+unsigned int _strspn(char* s, char* accept)
+{
+	unsigned int i, n, value, check;
 
-    while (*s != '\0') {
-        found = 0;
-        *acceptPtr = accept;
-        while (*acceptPtr != '\0') {
-            if (*s == *acceptPtr) {
-                found = 1;
-                break;
-            }
-            acceptPtr++;
-        }
+	value = 0;
 
-        if (!found) {
-            break;
-        }
-        length++;
-        s++;
-    }
-
-    return length;
-}
+	for (i = 0; s[i] !='\0'; i++)
+	{
+	check = 0
+	for (n = 0; accept[n] != '\0'; n++)
+	{
+	if (accept[n] == s[i])
+	{
+	value++;
+	check = 1;
+	}
+	}
+	}
+}	
