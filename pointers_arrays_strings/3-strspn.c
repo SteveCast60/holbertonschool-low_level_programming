@@ -9,13 +9,13 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
+	char *acceptPtr = accept;
 	unsigned int length = 0;
 	int found = 0;
-	
+
 	while (*s != '\0')
 	{
 		found = 0;
-		char *acceptPtr = accept;
 		
 		while (*acceptPtr != '\0')
 		{
