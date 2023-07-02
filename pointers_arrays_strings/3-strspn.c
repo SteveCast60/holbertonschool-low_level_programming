@@ -7,7 +7,7 @@
  * Return: always 0 (success)
  */
 
-unsigned int _strspn(const har *s, const char *accept)
+unsigned int _strspn(const char *s, const char *accept)
 {
 	const char *acceptPtr = accept;
 	unsigned int length = 0;
