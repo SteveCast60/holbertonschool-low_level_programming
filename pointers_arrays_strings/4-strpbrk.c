@@ -2,12 +2,10 @@
 
 char* _strpbrk(char* s, char* accept)
 {
-	char *acceptPtr;
+	char *acceptPtr = accept;
 
 	while (*s != '\0')
 	{
-		*acceptPtr = accept;
-
 		while (*acceptPtr != '\0')
 		{
 			if (*s == *acceptPtr)
