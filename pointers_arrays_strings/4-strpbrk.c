@@ -17,11 +17,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == *acceptPtr)
 			{
-				return s;
+				return (s);
 			}
 			acceptPtr++;
 		}
 		s++;
 	}
-	return NULL;
+	return (NULL);
 }
