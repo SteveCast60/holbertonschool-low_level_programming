@@ -21,9 +21,13 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *acceptPtr)
 			{
-				found++;
+				found = 1;
 			}
 			acceptPtr++;
+		}
+		if (!found)
+		{
+			break;
 		}
 		length++;
 		s++;
