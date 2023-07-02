@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *acceptPtr)
 			{
-				found = 1;
+				found++;
 				break;
 			}
 			acceptPtr++;
