@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-char* _strpbrk(char* s, char* accept)
+/**
+ * _strpbrk - Enter point of program
+ * @s: input value
+ * @accept: input value
+ * Return: NULL
+ */
+
+char *_strpbrk(char *s, char *accept)
 {
 	char *acceptPtr = accept;
 
