@@ -4,24 +4,20 @@
  * _strpbrk - Enter point of program
  * @s: input value
  * @accept: input value
- * Return: NULL
+ * Return: Always 0 (success)
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *acceptPtr = accept;
+	int i, n;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (*acceptPtr != '\0')
+		for (n = 0; accept[n] != '\0'; n++)
 		{
-			if (*s == *acceptPtr)
-			{
-				return (s);
-			}
-			acceptPtr++;
+			if (s[i] == accept[n])
+				return (s + i);
 		}
-		s++;
 	}
 	return (NULL);
 }
