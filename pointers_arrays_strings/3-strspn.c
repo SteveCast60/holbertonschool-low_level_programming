@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s != '\0')
 	{
 		found = 0;
-		
+
 		while (*acceptPtr != '\0')
 		{
 			if (*s == *acceptPtr)
@@ -25,12 +25,8 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			acceptPtr++;
 		}
-		if (!found)
-		{
-			break;
-		}
 		length++;
 		s++;
 	}
-	return length;
+	return (length);
 }
