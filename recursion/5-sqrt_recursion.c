@@ -2,6 +2,7 @@
 
 /**
  * _sqrt_recursion_helper - entry point
+ *_sqrt_recursion - entry point
  * @n: input
  * @start: input
  * @end: input
@@ -12,7 +13,7 @@ int _sqrt_recursion_helper(int n, int start, int end)
 {
 	int mid;
 	int square;
-	
+
 	if (start > end)
 	{
 		return (-1);
@@ -28,7 +29,7 @@ int _sqrt_recursion_helper(int n, int start, int end)
 	{
 		return (_sqrt_recursion_helper(n, mid + 1, end));
 	}
-	else 
+	else
 	{
 		return (_sqrt_recursion_helper(n, start, mid - 1));
 	}
