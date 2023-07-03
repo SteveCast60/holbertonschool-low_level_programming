@@ -7,7 +7,7 @@
  * Return: Always 0 (success)
  */
 
-void _puts_recursion(char *s);
+void puts_recursion(char *s);
 {
 	if (*s == '\0')
 	{
@@ -15,5 +15,5 @@ void _puts_recursion(char *s);
 		return;
 	}
 	printf("%c", *s);
-	_puts_recursion(s + 1);
+	puts_recursion(s + 1);
 }
