@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * _is_prime_number: entry point of program
- * _is_prime_number_helper: auxiliar function
+ * function that checks if an input integer n is a prime 
+ * _is_prime_number: function that checks if an input integer n is a prime 
+ * _is_prime_number_helper: Entry point of program
  * @n: input
  * @divisor: input
  * Return: Always 0 (success)
