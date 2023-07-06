@@ -2,7 +2,8 @@
 
 /**
  * _sqrt_recursion - entry point of program
- * _sqrt_recursion_aux - auxiliar function that returns the natural squared root
+ * @n: input
+ * _sqrt_recursion_aux - function that returns the natural squared root
  * @n: input
  * @y: input
  * Return: Always 0 (success)
