@@ -9,38 +9,25 @@
  * Return: Always 0 (success)
  */
 
-int _sqrt_recursion_helper(int n, int start, int end)
+int _sqrt_recursion(int n)
+
 {
-	int mid;
-	int square;
-
-	if (start > end)
-	{
-		return (-1);
-	}
-	mid = (start + end) / 2;
-	square = mid * mid;
-
-	if (square == n)
-	{
-		return (mid);
-	}
-	else if (square < n)
-	{
-		return (_sqrt_recursion_helper(n, mid + 1, end));
-	}
-	else
-	{
-		return (_sqrt_recursion_helper(n, start, mid - 1));
-	}
+	return _sqrt_recursion_aux(n, 1);
 }
 
-
-int _sqrt_recursion(int n)
+int _sqrt_recursion_aux(int n, int y)
 {
-	if (n < 0)
+	if (n > (y * y))
+	{
+	y++;
+	}
+	else if(n < (y * y))
 	{
 		return (-1);
 	}
-	return (_sqrt_recursion_helper(n, 0, n));
+	else if (n == (y * y))
+	{
+		return (y);
+	}
+	return _sqrt_recursion_aux((n), y++);
 }
