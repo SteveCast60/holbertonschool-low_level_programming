@@ -1,19 +1,13 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion_helper - entry point
- *_sqrt_recursion - entry point
+ * _sqrt_recursion - entry point of program
+ *_sqrt_recursion_aux - entry point auxiliar function
  * @n: input
  * @start: input
  * @end: input
  * Return: Always 0 (success)
  */
-
-int _sqrt_recursion(int n)
-
-{
-	return _sqrt_recursion_aux(n, 1);
-}
 
 int _sqrt_recursion_aux(int n, int y)
 {
@@ -30,4 +24,9 @@ int _sqrt_recursion_aux(int n, int y)
 		return (y);
 	}
 	return _sqrt_recursion_aux((n), y++);
+}
+
+int _sqrt_recursion(int n)
+{
+	return _sqrt_recursion_aux(n, 1);
 }
