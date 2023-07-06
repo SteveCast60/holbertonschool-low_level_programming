@@ -2,10 +2,9 @@
 
 /**
  * _sqrt_recursion - entry point of program
- *_sqrt_recursion_aux - entry point auxiliar function
+ *_sqrt_recursion_aux - entry point of program auxiliar function
  * @n: input
- * @start: input
- * @end: input
+ * @y: input
  * Return: Always 0 (success)
  */
 
