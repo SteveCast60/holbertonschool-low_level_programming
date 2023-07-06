@@ -14,7 +14,7 @@ int _sqrt_recursion_aux(int n, int y)
 	{
 	y++;
 	}
-	else if(n < (y * y))
+	else if (n < (y * y))
 	{
 		return (-1);
 	}
@@ -22,10 +22,10 @@ int _sqrt_recursion_aux(int n, int y)
 	{
 		return (y);
 	}
-	return _sqrt_recursion_aux((n), y++);
+	return (_sqrt_recursion_aux((n), y++));
 }
 
 int _sqrt_recursion(int n)
 {
-	return _sqrt_recursion_aux(n, 1);
+	return (_sqrt_recursion_aux(n, 1));
 }
