@@ -3,7 +3,7 @@
 /* function that checks if an input integer n is a prime*/
 
 /**
- *  _is_prime_number_helper - program that checks prime numbers
+ * is_prime_number_helper - program that checks prime numbers
  * @n: input
  * @divisor: input
  * Return: Always 0 (success)
@@ -27,7 +27,7 @@ int is_prime_number_helper(int n, int divisor)
 }
 
 /**
- * _is_prime_number - program that calls aux function
+ * is_prime_number - program that calls aux function
  * @n: input
  * Return: Always 0 (success)
  */
