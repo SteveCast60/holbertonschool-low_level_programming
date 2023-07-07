@@ -10,16 +10,12 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	
-	if (argc >= 0)
+	int length = sizeof(argv[]);
+
+	for (i = 0; i < length; i++)
 	{
-		for (i = 0; i < *argv[0]; i++)
-		{
-			*argv++
-		}
-		printf("%s\n", i);
+		resul = resul + 1;
 	}
+	printf("%d", resul);
 	return (0);
 }
-
-
