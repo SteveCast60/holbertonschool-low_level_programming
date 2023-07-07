@@ -9,13 +9,10 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int length = sizeof(argv[]);
+	(void)argc;
+	char length = sizeof(*argv);
+	
+	printf ("%d\n", length);
 
-	for (i = 0; i < length; i++)
-	{
-		resul = resul + 1;
-	}
-	printf("%d", resul);
-	return (0);
+	return(0);
 }
