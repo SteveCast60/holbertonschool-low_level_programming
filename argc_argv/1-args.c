@@ -9,11 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	unsigned int length;
-	length = sizeof(*argv);
+	(void)argv;
 	
-	printf ("%d\n", length);
-
+	printf("%d\n", argc)
+	
 	return(0);
 }
