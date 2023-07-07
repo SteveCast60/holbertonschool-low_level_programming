@@ -1,9 +1,13 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- *
- *
- *
+ *main - enter point
+ *@argc: input
+ *@argv: input
+ *x: input
+ *y: input
+ *r: input
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
