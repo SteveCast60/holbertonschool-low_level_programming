@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  *main - enter point
  *@argc: input
@@ -14,9 +15,9 @@ int main(int argc, char *argv[])
 {
 	int x, y, r;
 
-	if (argc != 3)
+	if(argc != 3)
 	{
-		printf ("error\n");
+		printf ("Error\n");
 		return (1);
 	}
 	
