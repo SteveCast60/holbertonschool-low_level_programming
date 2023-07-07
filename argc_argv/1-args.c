@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	(void)argc;
-	int length = sizeof(*argv);
+	int length;
+	length = sizeof(*argv);
 	
 	printf ("%d\n", length);
 
