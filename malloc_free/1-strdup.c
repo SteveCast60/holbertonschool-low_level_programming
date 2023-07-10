@@ -26,6 +26,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	return (ptr);
 	free(ptr);
+	return (ptr);
 }
