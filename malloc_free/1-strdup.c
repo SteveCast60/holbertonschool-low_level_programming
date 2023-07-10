@@ -12,19 +12,19 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	size_t length = strlen(str);
+	size_t length = strlen(str) + 1;
 
 	if (str == NULL)
         {
                 return (NULL);
         }
 	
-	ptr = malloc((length + 1) * sizeof(char));
+	ptr = malloc(length);
 
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(ptr, str);
+	memcpy(ptr, str, length);
 	return (ptr);
 }
