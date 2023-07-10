@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ * create_array - create an array of chars
+ *@size: input value
+ *@c: input value
+ *Return: char a pointer of function
  */
 
 char *create_array(unsigned int size, char c)
@@ -16,18 +16,18 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	str = malloc(size * sizeof(char));
-	
+
 	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
-	
+
 	for (i = 0; i < size; i++)
 	{
 		str[i] = c;
 	}
-	return(str);
+	return (str);
 }
