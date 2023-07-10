@@ -4,10 +4,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
+ * _strdup - returns a pointer with a copy of a string
+ *@str: input value
+ *Return: char pointer
  */
 
 char *_strdup(char *str)
@@ -20,12 +19,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	ptr = malloc((length + 1) * sizeof(char));
-	strcpy(ptr, str);
 
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
+
+	strcpy(ptr, str);
 	return (ptr);
-	free(ptr);
 }
