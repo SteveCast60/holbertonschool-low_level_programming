@@ -14,6 +14,10 @@ char *_strdup(char *str)
 	char *ptr;
 	size_t length = strlen(str);
 
+	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
+	}
 	ptr = malloc((length + 1) * sizeof(char));
 
 	if (ptr == NULL)
