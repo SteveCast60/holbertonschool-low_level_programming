@@ -17,9 +17,12 @@ char *str_concat(char *s1, char *s2)
 	size_t len2 = strlen(s2);
 	size_t length = (len1 + len2);
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL) 
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
 		s2 = "";
 	}
 	ptr = malloc((length + 1) * sizeof(char));
