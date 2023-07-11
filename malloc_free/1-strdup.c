@@ -10,19 +10,31 @@
  */
 
 char *_strdup(char *str)
-{
-	char *ptr;
-	size_t length = strlen(str);
+{       
+        int i, l = 0;
+        char *ptr;
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	ptr = malloc((length + 1) * sizeof(char));
+        if (str == NULL)
+        {
+                return (NULL);
+        }
+
+        for (i = 0; str[i]; i++)
+        {
+          l++;
+        }
+
+        ptr = malloc((l + 1) * sizeof(char));
+
 	if (ptr == NULL)
+        {
+                return (NULL);
+        }
+
+	for (i = 0; str[i]; i++)
 	{
-		return (NULL);
+		ptr[i] = str[i];
+	ptr[l] = '\0';
 	}
-	strcpy(ptr, str);
-	return (ptr);
+        return (ptr);
 }
