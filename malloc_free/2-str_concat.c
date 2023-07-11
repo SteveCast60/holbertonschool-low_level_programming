@@ -13,25 +13,43 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	size_t len1 = strlen(s1);
-	size_t len2 = strlen(s2);
-	size_t length = (len1 + len2);
+	int i, j, y; 
+	int l1 = 0;
+	int l2 = 0;
+	int length;
+	
+	 if (s1 == NULL)
+        {
+                s1 = "";
+        }
+        if (s2 == NULL)
+        {
+                s2 = "";
+        }
 
-	if (s1 == NULL)
+	for (i = 0; s1[i]; i++)
 	{
-		s1 = "";
+		l1++;
 	}
-	if (s2 == NULL)
+	for (j = 0; s2[j]; j++)
 	{
-		s2 = "";
+		l2++;
 	}
+	length = (l1 + l2);
+	
 	ptr = malloc((length + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	strcpy(ptr, s1);
-	strcpy(ptr + len1, s2);
+	for (y = 0; y < i; y++)
+	{
+		ptr[y] = s1[y];
+	}
+	for (y = 0; y < j; y++)
+	{
+		ptr[y + i] = s2[y];
+	}
 	return (ptr);
 }
