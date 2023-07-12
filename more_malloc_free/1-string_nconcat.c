@@ -6,8 +6,8 @@
  *@s1: input value
  *@s2: input value
  *@n: input value
- *return: pointer ptr
- */	
+ *Return: ptr pointer
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	if (n >= j)
 		n = j;
-	ptr = malloc(sizeof(char)*(i + n + 1));
+	ptr = malloc(sizeof(char) * (i + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 	for (x = 0; s1[x] != '\0'; x++)
