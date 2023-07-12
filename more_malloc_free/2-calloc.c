@@ -4,7 +4,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
+	unsigned int i;
 	void *ptr;
 
 	if (nmemb == 0 || size == 0)
