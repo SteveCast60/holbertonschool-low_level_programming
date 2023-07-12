@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *_calloc - function that allocates memory for an array
+ *@nmemb: input value
+ *@size: input value
+ *Return: ptr pointer
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
@@ -14,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	for (i = 0; i < (nmemb * size); i++)
 	{
-		((char * ) ptr) [i] = 0;
+		((char *)ptr)[i] = 0;
 	}
 	return (ptr);
 }
