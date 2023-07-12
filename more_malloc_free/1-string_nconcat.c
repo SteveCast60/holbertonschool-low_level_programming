@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
- *
+ *string_nconcat - function that concatenates two string
+ *@s1 - input value
+ *@s2 - input value
+ *return: pointer ptr
  */	
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, x, y;
+	unsigned int i, j, x, y;
 	char *ptr;
 
 	if (s1 == NULL)
