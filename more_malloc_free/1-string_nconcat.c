@@ -7,6 +7,7 @@
  *@s2 - input value
  *return: pointer ptr
  */	
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, x, y;
@@ -27,10 +28,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	for (x = 0; s1[x] != '\0'; x++)
 		ptr[x] = s1[x];
-	for (y = 0; y < i + n; y++)
-		ptr[y] = s2[y - i];
-	ptr[y] = '\0';
+	for (y = 0; y < n; y++, x++)
+		ptr[x] = s2[y];
+	ptr[x] = '\0';
 	return (ptr);
 }
-
-
