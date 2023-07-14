@@ -9,13 +9,14 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
+	int i;
 	unsigned int count = 0;
 	int found;
 
 	while (*s)
 	{
 		found = 0;
-		for (int i = 0; accept[i]; i++)
+		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
 			{
