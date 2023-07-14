@@ -7,31 +7,26 @@
  * Return: always 0 (success)
  */
 
-unsigned int _strspn(const char *s, const char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	const char *acceptPtr = accept;
-	unsigned int length = 0;
-	int found = 0;
+	unsigned int count = 0;
+	int found;
 
-	while (*s != '\0')
+	while (*s)
 	{
 		found = 0;
-
-		while (*acceptPtr != '\0')
+		for (int i = 0; accept[i]; i++)
 		{
-			if (*s == *acceptPtr)
+			if (*s == accept[i])
 			{
 				found = 1;
 				break;
 			}
-			acceptPtr++;
 		}
 		if (!found)
-		{
 			break;
-		}
-		length++;
+		count++;
 		s++;
 	}
-	return (length);
+	return count;
 }
