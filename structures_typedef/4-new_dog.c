@@ -8,6 +8,7 @@
  *@name: input
  *@age: input
  *@owner: input
+ *Return: Always 0
  */
 
 
