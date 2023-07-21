@@ -6,7 +6,7 @@
  *print_numbers - function that prints all numbers
  *@n: input value
  *@separator: value strings
- *Return: Void  
+ *Return: void 
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -28,6 +28,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
     if(i < (n - 1))
       printf("%s", separator);
   }
-  printf("\n1");
+  printf("\n");
   va_end(num);
 }
