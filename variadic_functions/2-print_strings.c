@@ -15,12 +15,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
   unsigned int i, x;
   
-  va_list num;
-  va_start(num, n);
+  va_list args;
+  va_start(args, n);
+
+  char *x;
   
     for(i = 0; i < n; i++)
   {
-    x = va_arg(num, unsigned int);
+    x = va_arg(args, char *);
     if (x == NULL)
     {
       printf("(nil)");
@@ -35,6 +37,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
     }
   }
   printf("\n");
-  va_end(num);
+  va_end(args);
   
 }
