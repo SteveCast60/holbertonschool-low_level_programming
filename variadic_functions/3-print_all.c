@@ -2,7 +2,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-
+/**
+ *variables: struct
+ */
 typedef struct variables
         {
         char *ptr;
@@ -48,11 +50,17 @@ void p_str(va_list argts)
         }
         printf("%s", str);
 }
+
+/**
+ * print_all - entry point
+ * @format: input value
+ * Return: void
+ */
 void print_all(const char * const format, ...)
 {
-        int i = 0, x;
-        char *esp = "", *coma = ", ";
-        va_list argts;
+	int i = 0, x;
+	char *esp = "", *coma = ", ";
+	va_list argts;
 
         type_var variables[] = {
                 {"c", p_char},
