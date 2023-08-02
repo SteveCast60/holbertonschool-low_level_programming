@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stddef.h>
 
-
 typedef struct list_s
 {
 	char *str;
@@ -11,7 +10,6 @@ typedef struct list_s
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	
 	printf("[");
 	while (h != NULL)
 	{
