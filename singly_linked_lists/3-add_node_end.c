@@ -1,7 +1,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
+
+
+void print_list(list_t *h)
+{
+    while (h != NULL)
+    {
+        printf("[%lu] %s\n", h->len, h->str);
+        h = h->next;
+    }
+}
+
 
 /**
  * add_node_end - Adds a new node at the end of a list_t list.
@@ -41,4 +51,3 @@ list_t *add_node_end(list_t **head, const char *str)
 
     return new_node;
 }
-
