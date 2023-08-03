@@ -12,12 +12,11 @@
 size_t print_list(const list_t *h)
 {
   size_t i = 0;
-  
   const list_t *current = h;
-  
+
   while (current != NULL)
   {
-    if(current->str == NULL)
+    if (current->str == NULL)
     {
       printf("[0] (nil)\n");
     }
@@ -28,6 +27,7 @@ size_t print_list(const list_t *h)
     current = current->next;
     i++;
   }
-  
-  return (h);
+
+  return i; // Devolver la cantidad de nodos impresos (tipo size_t).
 }
+
