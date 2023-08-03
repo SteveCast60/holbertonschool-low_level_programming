@@ -1,19 +1,20 @@
-#include <stddef.h>
+#include "lists.h"
 
-typedef struct node {
-    int data;
-    struct node *next;
-} list_t;
+/**
+ * list_len - number of elements in a linked list_t list.
+ * @h: pointer
+ * Return: number of nodes in the list
+ */
+size_t list_len(const list_t *h)
+{
+	size_t len = 0;
+	int i;
+	const list_t *c = h;
 
-size_t list_len(const list_t *h) {
-    size_t count = 0;
-    const list_t *current = h;
-
-    while (current != NULL) {
-        count++;
-        current = current->next;
-    }
-
-    return count;
+	for (i = 0; c; i++)
+	{
+	c = c->next;
+	len++;
+	}
+return (len);
 }
-
