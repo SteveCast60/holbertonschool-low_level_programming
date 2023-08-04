@@ -11,27 +11,19 @@
  *Return: Pointer to the nth node, or NULL if the node does not exist.
  */
 
-size_t print_dlistint(const dlistint_t *h)
-{
-	    size_t node_count = 0;
-	        while (h != NULL)
-			    {
-				            printf("%d\n", h->n);
-					            h = h->next;
-						            node_count++;
-							        }
-		    return node_count;
-}
+#include <stddef.h>
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	    unsigned int i = 0;
-	        const dlistint_t *current = head;
-
-		    while (current != NULL && i < index)
-			        {
-					        current = current->next;
-						        i++;
-							    }
-		        return (dlistint_t *)current;
+	unsigned int count = 0;
+	while (head != NULL)
+	{
+		if (count == index)
+		{
+			return head;
+		}
+		head = head->next;
+		count++;
+	}
+	return NULL;
 }
