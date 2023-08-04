@@ -1,17 +1,7 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
-
-
-void print_list(list_t *h)
-{
-    while (h != NULL)
-    {
-        printf("[%lu] %s\n", h->len, h->str);
-        h = h->next;
-    }
-}
-
+#include "main.h"
 
 /**
  * add_node_end - Adds a new node at the end of a list_t list.
@@ -50,4 +40,13 @@ list_t *add_node_end(list_t **head, const char *str)
     }
 
     return new_node;
+}
+
+void print_list(const list_t *head) // Implementación de la función con el nombre "head"
+{
+    while (head != NULL)
+    {
+     printf("[%lu] %s\n", (unsigned long)head->len, head->str);
+        head = head->next;
+    }
 }
