@@ -1,52 +1,55 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 
 /**
- * add_node_end - Adds a new node at the end of a list_t list.
- * @head: Pointer to the head of the linked list.
- * @str: The string to be duplicated and added to the new node.
- *
- * Return: The address of the new element, or NULL if it failed.
+ * _strlen - lenght of string
+ * @s:char
+ * Return:int
+ */
+unsigned int _strlen(char *s)
+{
+	int i;
+
+		for (i = 0; s[i] != '\0'; i++)
+		{
+			continue;
+		}
+return (i);
+}
+/**
+ * add_node_end - add new node at the end of the list
+ * @head:pointer to ponter to lined list
+ * @str : ponter to string inside the list
+ * Return:pointer to a node at the end of the list
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-    if (str == NULL)
-        return NULL;
+	list_t *new, *last;
 
-    list_t *new_node = malloc(sizeof(list_t));
-    if (new_node == NULL)
-        return NULL;
-
-    char *duplicate_str = strdup(str);
-    if (duplicate_str == NULL) {
-        free(new_node);
-        return NULL;
-    }
-
-    new_node->str = duplicate_str;
-    new_node->len = strlen(str);
-    new_node->next = NULL;
-
-    if (*head == NULL) {
-        *head = new_node;
-    } else {
-        list_t *current = *head;
-        while (current->next != NULL) {
-            current = current->next;
-        }
-        current->next = new_node;
-    }
-
-    return new_node;
-}
-
-void print_list(const list_t *head) // Implementación de la función con el nombre "head"
-{
-    while (head != NULL)
-    {
-     printf("[%lu] %s\n", (unsigned long)head->len, head->str);
-        head = head->next;
-    }
+	if (str == NULL)
+		return (NULL);
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
+	new->str = strdup(str);
+	if (new->str == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+	new->len = _strlen(new->str);
+	new->next = NULL;
+	if (*head == NULL)
+	{
+		*head = new;
+	}
+	else
+	{
+	last = *head;
+		while (last->next)
+		{
+		last = last->next;
+		}
+	last->next = new;
+	}
+	return (new);
 }
