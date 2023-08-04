@@ -3,10 +3,11 @@
 
 /**
  * insert_dnodeint_at_index - entry point
- * @**h: pointer to struct
+ * @h: pointer to struct
  * @idx: input
  * @n: input
- * */
+ * Return: 0 value
+ */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
