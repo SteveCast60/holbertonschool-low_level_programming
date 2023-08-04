@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * insert_dnodeint_at_index - entry point
+ * @**h: pointer to struct
+ * @idx: input
+ * @n: input
+ * */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *current = *h;
@@ -8,12 +15,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (new_node == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	if (h == NULL || idx == 0)
 	{
-		return add_dnodeint(h, n);
+		return (add_dnodeint(h, n));
 	}
 	new_node->n = n;
 
@@ -25,7 +32,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (current == NULL)
 	{
 		free(new_node);
-		return NULL;
+		return (NULL);
 	}
 	new_node->next = current->next;
 	new_node->prev = current;
@@ -34,5 +41,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current->next->prev = new_node;
 	}
 	current->next = new_node;
-	return new_node;
+	return (new_node);
 }
