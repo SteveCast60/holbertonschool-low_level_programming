@@ -5,14 +5,14 @@
  * @head - input
  */
 
-int sum_dlistint(dlistint_t *head) 
+int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
-	
-	while (head != NULL)
+	dlistint_t *current = head;
+	while (current != NULL)
 	{
-		sum += head->n;
-		head = head->next;
+		sum += current->n;
+		current = current->next;
 	}
-	return sum;
+	return (sum);
 }
