@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include "lists.h"
 
 /**
- * sum_dlistint - Entry point
- * @head - input
+ *sum_dlistint - sum of element in list
+ *@head:list
+ *Return: int
  */
-
 int sum_dlistint(dlistint_t *head)
 {
 	int sum = 0;
-	dlistint_t *current = head;
-	while (current != NULL)
+
+	while (head != NULL)
 	{
-		sum += current->n;
-		current = current->next;
+		sum += head->n;
+		head = head->next;
 	}
 	return (sum);
 }
