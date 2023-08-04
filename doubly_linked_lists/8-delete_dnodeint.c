@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- *delete_dnodeint_at_index - Deletes the node 
+ *delete_dnodeint_at_index - Deletes the node
  *@head: A pointer to the pointer to the head node.
  *@index: The index of the node to be deleted. Index starts at 0.
  *
