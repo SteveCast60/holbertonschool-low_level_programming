@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * binary_to_uint - entry point
- * @b: pointer
- * return: unsigned int
+ *binary_to_uint - entry point
+ *@b: pointer
+ *Return: Always 0 value
  */
 
 unsigned int binary_to_uint(const char *b)
