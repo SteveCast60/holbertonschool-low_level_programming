@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - entry point
  * @b: pointer
- * return 0;
+ * return: unsigned int
  */
 
 unsigned int binary_to_uint(const char *b)
